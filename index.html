@@ -1,0 +1,139 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+    />
+    <link rel="stylesheet" href="resto.css" />
+    <title>Yelp Resto Generator</title>
+  </head>
+  <body>
+    <h1>Random Restaurant Generator</h1>
+    <h3>
+      featuring restaurants and reviews from
+      <a href="https://www.yelp.ca/"
+        ><img
+          src="https://s3-media1.fl.yelpcdn.com/assets/srv0/styleguide/db7929fad560/assets/img/brand_guidelines/burst_icon.png"
+          alt=""
+      /></a>
+    </h3>
+    <br />
+    <br />
+
+    <div class="ui grid">
+      <div class="sixteen wide column">
+        <h2><strong>1. </strong>Where To?</h2>
+        <p>
+          to search for a random restaurant nearby, press enter after you type
+          in your location below:
+        </p>
+        <div class="locationSearch">
+          <div class="ui icon input">
+            <input type="text" placeholder="Please enter a location" />
+            <i class="search icon"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ui grid">
+      <div class="sixteen wide column">
+        <div class="ui form">
+          <div class="grouped fields">
+            <h2><strong>2. </strong>Type of Cuisine(s):</h2>
+          </div>
+        </div>
+        <div class="ui grid">
+          <div class="sixteen wide column">
+            <div class="field">
+              <div class="ui radio checkbox">
+                <input type="radio" />
+                <label>All</label>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui radio checkbox">
+                <input type="radio" />
+                <label>Indian</label>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui radio checkbox">
+                <input type="radio" />
+                <label>Chinese</label>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui radio checkbox">
+                <input type="radio" />
+                <label>Japanese</label>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui radio checkbox">
+                <input type="radio" />
+                <label>Korean</label>
+              </div>
+            </div>
+
+            <div class="ui grid">
+              <div class="sixteen wide column">
+                <div class="field">
+                  <div class="ui radio checkbox">
+                    <input type="radio" />
+                    <label>Western</label>
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="ui radio checkbox">
+                    <input type="radio" />
+                    <label>Italian</label>
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="ui radio checkbox">
+                    <input type="radio" />
+                    <label>Mexican</label>
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="ui radio checkbox">
+                    <input type="radio" />
+                    <label>Lebanese</label>
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="ui radio checkbox">
+                    <input type="radio" />
+                    <label>Vietnamese</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br />
+            <div id="find">
+              <button class="ui button">
+                Find!
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ui grid">
+      <div class="sixteen wide column">
+        <h2><strong>3. </strong>Alternatively, enter a keyword</h2>
+        <div class="ui icon input">
+          <input type="text" placeholder="Search query" id="query" />
+          <i class="search icon"></i>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="resto.js"></script>
+  </body>
+</html>
